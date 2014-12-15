@@ -1,0 +1,289 @@
+.wrapper-about {
+	position: relative;
+	height: 420px;
+}
+
+.wrapper-about h1 {
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 1.2em;
+	-webkit-backface-visibility: hidden;
+	padding: 80px 0 0 0;
+	margin: 0;
+	text-align: left;
+}
+
+.wrapper-about .intro {
+	color: #666;
+	font-size: 18px;
+	line-height: 1.5em;
+	max-width: 400px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+.wrapper-about .aboutbutton, .highlights .button-secondary {
+	display: inline-block;
+}
+
+.aboutbutton {
+	background-color: #1784bf;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.aboutbutton:hover {
+	background-color:#d26911;
+}
+
+.wrapper-about .logo-big {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	z-index: -1;
+	width: 350px;
+}
+
+img {
+	color: transparent;
+	font-size: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+.contact-callout {
+	background: #160625;
+}
+
+.dev-program.feature h1, .contact-callout h2 {
+	color: #eee;
+}
+
+h2 {
+	font-size: 22px;
+	color: #333;
+	margin: 2em auto 1em;
+	position: relative;
+	font-weight: 300;
+}
+.contact-callout p {
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+
+.dev-program.feature .intro, .contact-callout p {
+	color: #a397ad;
+}
+
+.contact-callout .container {
+	padding: 40px 0;
+	background: #160625 url(../img/message.png) no-repeat right / 30%;
+	background-position-y: 40px;
+}
+.contact-callout .container a {
+	color: #1784bf;
+}
+.full-width-divider {
+	width: 100%;
+	background: #160625;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+}
+
+.highlight-module:first-child {
+	padding-left: 0;
+	padding-right: 14px;
+}
+
+.highlight-module {
+	list-style-type: none;
+	display: table-cell;
+	padding: 30px 14px 30px;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+
+/*.site-footer {
+	border: none;
+}*/
+
+.highlight-module .icon {
+	font-size: 70px;
+	width: 110px;
+	height: 110px;
+}
+
+.highlights h2 {
+	margin: 10px 0 15px;
+	font-size: 23px;
+	line-height: 1.2;
+	-webkit-backface-visibility: hidden;
+	color: white;
+}
+.highlights p {
+	color: #bbb;
+}
+.highlight-module:first-child {
+	padding-left: 0;
+	padding-right: 14px;
+}
+
+.highlight-module img {
+	max-width: 100%;
+}
+
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 30px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.highlight-module .icon {
+	
+	/*background: rgba(255,255,255,0.1);*/
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+
+.highlight-module .icon:after {
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 4px #1784bf;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(.8);
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transition: transform 0.2s, opacity 0.2s;
+	transform: scale(.8);
+	opacity: 0;
+}
+
+article, section {
+	display: block;
+}
+
+
+.highlight-module:hover .icon:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.panel-content {
+	padding: 1.5em 1.5em 0em 1.5em;
+}
+
+.media {
+	margin-bottom: 1.5em;
+	padding-bottom: 0.7em;
+	border-bottom: 1px solid #eee;
+}
+.image-media .media-list-image {
+	width: 25%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 0em;
+	padding-right: 0.75em;
+}
+
+.mdrn .media-image {
+	border: none;
+	box-shadow: 0 0 0 1px rgba(54, 61, 66, 0.05), 0 1px 2px 0 rgba(54, 61, 66, 0.25);
+}
+.media-image {
+	margin-bottom: 0;
+	background-color: #FFF;
+	padding: 3px;
+	border: 1px solid #d8dcdf;
+	border-radius: 2px;
+	margin-bottom: 0.75em;
+}
+.media-image-ratio {
+	position: relative;
+	height: 0;
+	border-radius: 2px;
+	padding-bottom: 66%;
+	overflow: hidden;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+.image-media .media-content {
+	width: 75%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 0.75em;
+	padding-right: 0em;
+}
+.image-media::after, article:after{
+	clear: both;
+}
+.media-date {
+	display: block;
+	margin-bottom: 0;
+	font-size: 0.7rem;
+	line-height: 2em;
+	color: #999;
+}
+.media-title {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 0.9rem;
+	line-height: 1.5em;
+}
+.media-intro {
+	color: #4d575e;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-size: 0.75rem;
+	line-height: 1.71429em;
+}
+.media-content p {
+	margin:0;
+}
+
+.section-footer:before, .section-header:before, .section-sub-title:before, .message:before, .panel:before, .panel-header:before, .panel-footer:before, .panel-content:before, .box:before, .box-content:before, .tabs:before, .tabs ul:before, .wizard-nav:before, .pills:before, .input-group:before, .line-list:before, .line-list > li:before, .line-list a:before, .line-names:before, .autocomplete-list:before, .media-section:before, .media-section-footer:before, .media-section-header:before, .media-list:before, .media:before, .media-header:before, .media-title:before, .work-item-content:before, .breadcrumb-nav:before, .modal-box-header:before, .modal-box-footer:before, .modal-box-content:before, .pagination ul:before, .diversion-summary:before, .diversion-summary-list li:before, .social-buttons:before, .row:before, .li-replacer:before, .ul-replacer:before, .header-row:before, .header-nav ul:before, .footer .inner:before, .footer-nav ul:before, .form-row:before, .option-group:before, .main-header:before, .main-panel:before, .main-content:before, .search-row:before, .search-input-group:before, .search-option-accessible:before, .route-selection-options:before, .route-selection-options li:before, .route-selection-options a:before, .route-selection-options .clickable-tab:before, .route-step:before, .route-step-header:before, .route-step-line:before, .route-step-header-location:before, .time-table-header:before, .time-table-entry:before, .time-table-entry-cells:before, .time-table-header-cells:before, .time-table-entry-cells .inner:before, .time-table-header-cells .inner:before, .time-table-entry-title:before, .diversion-content:before, .t-table th:before, .t-table td:before, .t-table-holder:before, .t-table-pearl .time-table-entry-point:before, .section-footer:after, .section-header:after, .section-sub-title:after, .message:after, .panel:after, .panel-header:after, .panel-footer:after, .panel-content:after, .box:after, .box-content:after, .tabs:after, .tabs ul:after, .wizard-nav:after, .pills:after, .input-group:after, .line-list:after, .line-list > li:after, .line-list a:after, .line-names:after, .autocomplete-list:after, .media-section:after, .media-section-footer:after, .media-section-header:after, .media-list:after, .media:after, .media-header:after, .media-title:after, .work-item-content:after, .breadcrumb-nav:after, .modal-box-header:after, .modal-box-footer:after, .modal-box-content:after, .pagination ul:after, .diversion-summary:after, .diversion-summary-list li:after, .social-buttons:after, .row:after, .li-replacer:after, .ul-replacer:after, .header-row:after, .header-nav ul:after, .footer .inner:after, .footer-nav ul:after, .form-row:after, .option-group:after, .main-header:after, .main-panel:after, .main-content:after, .search-row:after, .search-input-group:after, .search-option-accessible:after, .route-selection-options:after, .route-selection-options li:after, .route-selection-options a:after, .route-selection-options .clickable-tab:after, .route-step:after, .route-step-header:after, .route-step-line:after, .route-step-header-location:after, .time-table-header:after, .time-table-entry:after, .time-table-entry-cells:after, .time-table-header-cells:after, .time-table-entry-cells .inner:after, .time-table-header-cells .inner:after, .time-table-entry-title:after, .diversion-content:after, .t-table th:after, .t-table td:after, .t-table-holder:after, .t-table-pearl .time-table-entry-point:after {
+display: table;
+content: "";
+}
+
+.full-width-interactive {
+	/*background-color: #f2f2f2;*/
+}
