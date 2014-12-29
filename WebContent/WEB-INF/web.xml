@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>crudUser</display-name>
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <scripting-invalid>true</scripting-invalid>
+    </jsp-property-group>
+  </jsp-config>
+  <welcome-file-list>
+    <welcome-file>overview.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>
+			 jdbc:postgresql://gegevensbanken.khleuven.be:51415/2TX32
+	 	 </param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>daily.build</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>irooZiNgae0daiba</param-value>
+  </context-param>
+  <context-param>
+    <param-name>ssl</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>sslfactory</param-name>
+    <param-value>org.postgresql.ssl.NonValidatingFactory</param-value>
+  </context-param>
+</web-app>

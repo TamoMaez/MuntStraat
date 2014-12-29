@@ -1,0 +1,459 @@
+@CHARSET "ISO-8859-1";
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button, select, html, body, div, a, textarea, input {
+	font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+a, a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+header {
+	position: relative;
+	z-index: 50;
+	font-weight: 400;
+}
+
+header .navbar-default .nav {
+	margin-top: 8px;
+}
+
+header .navbar-default>.nav>li {
+	margin-left: 15px;
+}
+
+header .navbar {
+	min-height: 48px;
+}
+
+.i-user {
+	padding-bottom: 6px;
+}
+
+header .nav-pills .header-item-content {
+	display: none;
+	position: absolute;
+	font-size: 13px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #fff;
+	-moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px
+		rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px
+		1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px
+		rgba(0, 0, 0, 0.2);
+	right: 0px;
+	top: 49px;
+}
+
+header .header-item-content.header-item-logged {
+	white-space: nowrap;
+	padding: 10px 0;
+}
+
+header .nav a {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0 !important;
+}
+
+.i-logo-48 {
+	position: absolute;
+	margin-top: -10px; background-image :
+	url('../img/logoFlippedInverse.png');
+	background-position: 0 0;
+	height: 75px;
+	width: 200px;
+	-moz-background-size: 176px auto;
+	-o-background-size: 176px auto;
+	-webkit-background-size: 176px auto;
+	background-size: auto 100%;
+	background-image: url('../img/logoFlippedInverse.png');
+}
+
+[class^="i-"] {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 300px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+@media ( min-width : 3px) and (max-width: 1267px) {
+	.row-table.row-table-xs>[class*="col-"] .img-responsive {
+		width: 100%
+	}
+}
+
+.row-table.row-table-xs>[class*="col-"].td-top {
+	vertical-align: top !important
+}
+
+.row-table . row-table-xs>[class*="col-"].td-bottom {
+	vertical-align: bottom !important
+}
+
+@media ( min-width : 3px) { .
+	row-table {
+		display: table !important
+	}
+	.row-table>[class*="col-"] {
+		float: none !important;
+		display: table-cell !
+important;
+		vertical-align: middle;
+		padding-left: 9px;
+		padding-right: 9px
+	}
+}
+
+@media ( min-width : 3px) and (min-width: 3px) and (max-width: 1267px) {
+	.row-table>[class*="col-"] .img-responsive {
+		width: 100%
+	}
+}
+
+@media ( min-width : 3px) {
+	.row-table>[class*="col-"].td-top {
+		vertical-align: top !important
+	}
+	.row-table>[class*="col-"].td-bottom {
+		vertical-align: bottom !important
+	}
+}
+
+.margin-tiny, .margin-small, .margin-medium, . margin-large,
+	.margin-huge {
+	display: block
+}
+
+.margin-tiny {
+	height: 8px
+}
+
+.margin-small {
+	height: 15px
+}
+
+.margin-medium {
+	height: 30px
+}
+
+.margin-large {
+	height: 45px
+}
+
+.margin-huge {
+	height: 75px
+}
+
+.h1-epic {
+	font-size: 68px
+}
+
+@media ( min-width : 1268px) {
+	.margin-tiny {
+		height: 10px
+	}
+	.margin-small {
+		height: 20px
+	}
+	.margin-medium {
+		height: 40px
+	}
+	.
+	margin-large {
+		height: 60px
+	}
+	.margin-huge {
+		height: 100px
+	}
+}
+
+.cutout, .cutout-content {
+	background: #ECEBEA;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.cutout-content {
+	padding: 20px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.cutout .nav-stacked {
+	padding: 0 0 8px 10px;
+}
+
+.cutout .nav-stacked li ul {
+	padding-bottom: 10px;
+}
+
+.cutout .nav-pills>li>a {
+	padding-bottom : 0;
+	padding-top: 0;
+}
+
+.nav-pills>li>a {
+	font-weight: 500;
+}
+
+.nav-pills>li.active>a {
+	background: #ECEBEA;
+	color: #428bca;
+}
+
+.nav-pills>li>a:hover, .nav-pills>li.active>a:hover {
+	background: #ECEBEA;
+	color: black;
+}
+
+.nav-pills>li>a {
+	border-radius: 0;
+}
+
+.default-color {
+	color: #428bca;
+}
+
+.thumbnailHolder {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.thumbnail {
+	display: block;
+	padding: 10px;
+	margin-bottom: 40px;
+	line-height: 1.42857143;
+	background: #ECEBEA;
+	-moz-box-sizing: border-box;
+	border: none;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.thumbnail:hover {
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3)}
+
+.thumbnailHolder img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	width: auto;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.header-item-switcher.user {
+	background: #ECEBEA;
+}
+
+.btn.call-to-action {
+	margin-top: -11px;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Animations */
+.animate-enter, .animate-leave {
+	-webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	position: relative;
+	display: block;
+}
+
+.animate-enter.animate-enter-active, .animate-leave {
+	opacity: 1;
+	top: 0;
+	height: 30px;
+}
+
+.animate-leave.animate-leave-active, .animate-enter {
+	opacity: 0;
+	top: -50px;
+	height: 0px;
+}
+
+.fadein, .fadeout {
+	-webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+	-moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+	-o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+	transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+
+.fadein.ng-hide-remove, .fadeout.ng-hide-add.ng-hide-add-active {
+	opacity: 0;
+	display: block !important;
+}
+
+.fadeout.ng-hide-add, .fadein.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1;
+	display: block !important;
+}
+
+.animate-repeat.ng-enter, .animate-repeat.ng-leave, .animate-repeat.ng-move
+	{
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
+}
+
+.animate-repeat.ng-enter {
+	line-height: 0;
+	opacity: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.animate-repeat.ng-enter.ng-enter-active {
+	/*line-height:10px;*/
+	opacity: 1;
+	/*padding:5px;
+  padding-left:0;*/
+}
+
+.animate-repeat.ng-leave {
+	opacity: 1;
+
+	/*line-height:20px;
+  padding:10px;*/
+}
+
+.animate-repeat.ng-leave.ng-leave-active {
+	z-index: -1; 
+	position : absolute;
+	opacity: 0;
+	line-height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: absolute;
+}
+
+.animate-repeat.ng-move {
+	
+}
+
+.animate-repeat.ng-move.ng-move-active {
+	
+}
+
+.grid-list-pull-down {
+	position: relative;
+	transform: translateY(100%);
+}
+
+.media-left, .media-right, .media-body {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.media-left, .media>.pull-left {
+	padding-right: 10px;
+}
+
+.row>.media {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   absolute;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+html {
+    overflow-y: scroll; 
+}
+
+a:visited {
+	decoration: none;
+}
+
+/* tags */
+
+.tag {
+	margin: 0 6px 6px 0;
+	padding: 3px 6px 4px 6px;
+	font-weight: normal;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.tag-flag {
+margin: 0 6px 6px 0;
+	padding: 3px 6px 4px 6px;
+	font-weight: normal;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #777;
+	border: 1px solid #ccc;
+	background: rgba(0, 0, 0, 0.07)
+		url(/assets/button-glass-20e7307a8fae1b221f4caad71c4cfce0.png)
+		repeat-x 0 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
