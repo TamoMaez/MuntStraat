@@ -37,4 +37,7 @@ $body = $("body");
 
 $( document ).ready(function() {
 	ajaxStart();
-})
+	setTimeout(function() {
+	$( ".cutout, .cutout-content" ).css('transform', 'matrix(1, 0, 0, 1, 0, 0)');
+	}, 100);
+	})
