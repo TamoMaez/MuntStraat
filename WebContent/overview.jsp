@@ -26,7 +26,7 @@
 							<h4 class="cutout-content uppercase">My Filter</h4>
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="" data-toggle="collapse" href="#collapseType" ng-click="filterDb(); setFilter();">All <span
-													 class="badge">{{ totalBs }}</span></a>
+													data-ng-bind="totalBs" class="badge">23</span></a>
 									<ul class="collapse in" id="collapseType"
 										aria-expanded="false">
 										
@@ -54,7 +54,7 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="page-title">
-								<h1 class="uppercase text-primary">My Search 
+								<h1 class="uppercase default-color">My Search 
 								<small> 
 								<span ng-repeat="x in filters">
 								<span ng-if="$first"> / </span>
@@ -117,7 +117,7 @@
 							</div>
 						</div>
 						</div>
-						<div ng-if="grid == false">
+						<div ng-if="!grid">
 							<div
 								ng-repeat="x in filtered = (list | filter:search | orderBy:'naam')"
 								class="animate-repeat media">

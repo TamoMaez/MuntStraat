@@ -11,8 +11,15 @@ button, select, html, body, div, a, textarea, input {
 }
 
 a, a:hover {
-	color: black;
+	color: rgba(0, 0, 0, .87);
 	text-decoration: none;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: .01em;
+}
+
+body {
+	background-color: #9ccc65;
 }
 
 .navbar-default {
@@ -24,10 +31,19 @@ header {
 	position: relative;
 	z-index: 50;
 	font-weight: 400;
+	background: white;
 }
 
 header .navbar-default .nav {
 	margin-top: 8px;
+}
+
+.form-control {
+	border-radius: 2px;
+}
+
+.btn {
+	border-radius: 2px;
 }
 
 header .navbar-default>.nav>li {
@@ -42,27 +58,73 @@ header .navbar {
 	padding-bottom: 6px;
 }
 
+element.style {
+	display: block;
+	background-clip: padding-box;
+	background-color: #fff;
+	/* display: none; */
+	float: left;
+	/* font-size: 16px; */
+	/* left: 0; */
+	list-style: none;
+	margin: 2px 0 0;
+	min-width: 120px;
+	padding: 8px 0;
+	/* position: absolute; */
+	text-align: left;
+	/* top: 8px; */
+	z-index: 12;
+}
+
 header .nav-pills .header-item-content {
 	display: none;
 	position: absolute;
+	color: #757575;
 	font-size: 13px;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
+	min-width: 120px;
 	border-radius: 2px;
 	background: #fff;
-	-moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px
+	/*-moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px
 		rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px
 		1px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px
-		rgba(0, 0, 0, 0.2);
+		rgba(0, 0, 0, 0.2);*/
 	right: 0px;
 	top: 49px;
 }
 
+header .nav-pills .header-item-content::before, header .nav-pills .header-item-content::after
+	{
+	border-radius: 2px;
+	content: ' ';
+	display: block;
+	z-index: -1;
+	will-change: box-shadow, transform;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+header .nav-pills .header-item-content::before {
+	box-shadow: 0 -2px 6px transparent, 0 3px 8px rgba(0, 0, 0, 0.15), 0
+		10px 10px transparent, 0 14px 14px transparent, 0 19px 19px
+		transparent;
+}
+
+header .nav-pills .header-item-content::after {
+	box-shadow: 0 2px 3px transparent, 0 4px 4px rgba(0, 0, 0, 0.15), 0 6px
+		5px transparent, 0 10px 6px transparent, 0 15px 6px transparent;
+}
+
 header .header-item-content.header-item-logged {
 	white-space: nowrap;
-	padding: 10px 0;
+	padding: 4px 0;
 }
 
 header .nav a {
@@ -76,8 +138,8 @@ header .nav a {
 
 .i-logo-48 {
 	position: absolute;
-	margin-top: -10px; background-image :
-	url('../img/logoFlippedInverse.png');
+	margin-top: -20px;
+	background-image: url('../img/logoFlippedInverse.png');
 	background-position: 0 0;
 	height: 75px;
 	width: 200px;
@@ -188,10 +250,12 @@ important;
 }
 
 .cutout, .cutout-content {
-	background: #ECEBEA;
+	background: white;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
+	box-shadow: 0 2px 3px transparent, 0 4px 4px rgba(0, 0, 0, .15), 0 6px
+		5px transparent, 0 10px 6px transparent, 0 15px 6px transparent;
 }
 
 .cutout-content {
@@ -211,7 +275,7 @@ important;
 }
 
 .cutout .nav-pills>li>a {
-	padding-bottom : 0;
+	padding-bottom: 0;
 	padding-top: 0;
 }
 
@@ -234,7 +298,7 @@ important;
 }
 
 .default-color {
-	color: #428bca;
+	color: white;
 }
 
 .thumbnailHolder {
@@ -246,20 +310,22 @@ important;
 
 .thumbnail {
 	display: block;
-	padding: 10px;
+	padding: 0;
 	margin-bottom: 40px;
 	line-height: 1.42857143;
-	background: #ECEBEA;
+	background: transparent;
 	-moz-box-sizing: border-box;
 	border: none;
-	border-radius: 4px;
+	border-radius: 2px;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
-.thumbnail:hover {
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .3)}
+
+.thumbnail {
+	box-shadow: 0 2px 3px transparent, 0 4px 4px rgba(0, 0, 0, .15), 0 6px
+		5px transparent, 0 10px 6px transparent, 0 15px 6px transparent;
+}
 
 .thumbnailHolder img {
 	position: absolute;
@@ -270,6 +336,16 @@ important;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.top-radius {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.bottom-radius {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 
 .header-item-switcher.user {
@@ -354,8 +430,8 @@ ul {
 }
 
 .animate-repeat.ng-leave.ng-leave-active {
-	z-index: -1; 
-	position : absolute;
+	z-index: -1;
+	position: absolute;
 	opacity: 0;
 	line-height: 0;
 	padding-top: 0;
@@ -396,33 +472,31 @@ ul {
    speak for themselves. Background we set to 80% white with
    our animation centered, and no-repeating */
 .modal {
-    display:    none;
-    position:   absolute;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: rgba( 255, 255, 255, .8 ) 
-                url('http://i.stack.imgur.com/FhHRx.gif') 
-                50% 50% 
-                no-repeat;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .8)
+		url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
 }
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
 body.loading {
-    overflow: hidden;   
+	overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
 body.loading .modal {
-    display: block;
+	display: block;
 }
 
 html {
-    overflow-y: scroll; 
+	overflow-y: scroll;
 }
 
 a:visited {
@@ -430,7 +504,6 @@ a:visited {
 }
 
 /* tags */
-
 .tag {
 	margin: 0 6px 6px 0;
 	padding: 3px 6px 4px 6px;
@@ -442,8 +515,9 @@ a:visited {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+
 .tag-flag {
-margin: 0 6px 6px 0;
+	margin: 0 6px 6px 0;
 	padding: 3px 6px 4px 6px;
 	font-weight: normal;
 	text-decoration: none;
@@ -456,4 +530,51 @@ margin: 0 6px 6px 0;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+}
+
+.card-action-text {
+	color: #8bc349;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.block {
+	display: block;
+	padding: 14px;
+}
+
+.card-action {
+	color: inherit;
+	display: block;
+	position: relative;
+}
+
+.card-footer {
+	background-color: white;
+}
+
+.nav-counter {
+	position: absolute;
+	top: -1px;
+	right: 1px;
+	min-width: 8px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -11px;
+	padding: 0 6px;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	background: #e23442;
+	border: 1px solid #911f28;
+	border-radius: 11px;
+	background-image: -webkit-linear-gradient(top, #e8616c, #dd202f);
+	background-image: -moz-linear-gradient(top, #e8616c, #dd202f);
+	background-image: -o-linear-gradient(top, #e8616c, #dd202f);
+	background-image: linear-gradient(to bottom, #e8616c, #dd202f);
+	-webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px
+		rgba(0, 0, 0, 0.12);
+	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px
+		rgba(0, 0, 0, 0.12);
 }

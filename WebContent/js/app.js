@@ -10,11 +10,6 @@
 			$scope.grid = true; //(nut?)
 			$scope.list = [];
 			
-			
-			$http.post('Controller', {msg:'hello word!'}).
-			  success(function(data, status, headers, config) {
-			    
-			  })	
 		// vraag JSON op zonder filter
 			
 			$http.get('Controller?action=filter').success(function(response) {
